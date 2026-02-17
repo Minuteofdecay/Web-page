@@ -166,10 +166,6 @@ nav > a:hover {
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
-html, body {
-    overflow-x: hidden;
-}
-
 /* --- RESPONSIVE (Celulares) --- */
 @media screen and (max-width: 768px) {
     .imagen-info-prot, .contenido-textos {
@@ -181,4 +177,5 @@ html, body {
         margin-bottom: 30px;
     }
 }
+
 
