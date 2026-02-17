@@ -166,15 +166,37 @@ nav > a:hover {
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 /* --- RESPONSIVE (Celulares) --- */
 @media screen and (max-width: 768px) {
-    .imagen-info-prot, .contenido-textos {
-        width: 100%;
-        text-align: center;
+    .contenedor-sobre-nosotros {
+        flex-direction: column; /* Cambia de fila a columna */
+        margin-top: 50px;      /* Ya no necesitamos que suba tanto a la ola */
+        gap: 20px;
     }
-    
+
     .imagen-info-prot {
-        margin-bottom: 30px;
+        width: 90%;            /* La imagen ocupa casi todo el ancho */
+        max-width: 350px;      /* Pero que no se vea gigante */
+        margin: 0 auto;        /* La centra */
+    }
+
+    .contenido-textos {
+        width: 100%;           /* El texto ocupa todo el ancho */
+        text-align: center;    /* Centramos los servicios para que se vea mejor */
+        padding: 0 20px;       /* Un poco de margen a los lados */
+    }
+
+    .contenido-textos h3 {
+        justify-content: center; /* Centra el círculo con el título */
+    }
+
+    .contenido-textos p {
+        text-align: center;    /* Texto centrado debajo del título */
+        margin-left: 0;        /* Quitamos el margen que pusimos para PC */
     }
 }
 
